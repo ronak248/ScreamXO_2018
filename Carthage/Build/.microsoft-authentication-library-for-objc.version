@@ -1,0 +1,9 @@
+{
+  "commitish" : "cd9e3ea353f134ea779dfd5cc2bd778aebdd26f9",
+  "iOS" : [
+    {
+      "name" : "MSAL",
+      "hash" : "415200843a0c7beaea3cfb7061eee3f23d70a0daab73f8e2602ebc33130b1030"
+    }
+  ]
+}

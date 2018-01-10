@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FcW-G2-G5r">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="147" y="716"/>
+        </scene>
+        <!--Item Listing Watch-->
+        <scene sceneID="jS0-SB-OKS">
+            <objects>
+                <controller id="gkS-Md-PIB" customClass="ItemListing_Watch" customModule="ScreamXO_watch_Extension">
+                    <items>
+                        <table alignment="left" id="oLO-EM-qws">
+                            <items>
+                                <tableRow identifier="ListItem" id="Yyf-DY-zPa" customClass="ItmCellWatch" customModule="ScreamXO_watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="5" id="UsZ-fz-Efw">
+                                        <items>
+                                            <group alignment="left" radius="0.0" id="nKf-bq-cDJ">
+                                                <items>
+                                                    <group width="30" height="30" alignment="left" radius="15" id="LB1-rL-ds9">
+                                                        <items>
+                                                            <imageView width="1" height="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" animationDuration="1" id="KYK-a5-GzR"/>
+                                                        </items>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </group>
+                                                    <label width="93.5" alignment="left" verticalAlignment="center" textAlignment="center" minimumScaleFactor="0.5" id="RPO-o2-sOd">
+                                                        <fontDescription key="font" type="system" weight="semibold" pointSize="15"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                            <group width="1" alignment="left" verticalAlignment="bottom" id="Iju-wP-6Ch">
+                                                <items>
+                                                    <label width="1" alignment="left" text="Label" numberOfLines="4" id="gLX-Fu-eqB">
+                                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
+                                        <connections>
+                                            <segue destination="YoX-GW-iQn" kind="push" identifier="detailsfullitm" id="qTT-EK-BrD"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="imgItem" destination="KYK-a5-GzR" id="F2J-Cl-CIo"/>
+                                        <outlet property="lbldescription" destination="gLX-Fu-eqB" id="EES-ho-Pfm"/>
+                                        <outlet property="lblitmname" destination="RPO-o2-sOd" id="rkc-qD-5GO"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <imageView width="25" height="25" alignment="center" verticalAlignment="center" hidden="YES" id="rdM-fl-DQJ"/>
+                    </items>
+                    <connections>
+                        <outlet property="imgLoader" destination="rdM-fl-DQJ" id="FFP-Xr-Kpy"/>
+                        <outlet property="table" destination="oLO-EM-qws" id="1OB-DA-NOb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="297" y="-171"/>
+        </scene>
+        <!--Media Buffet Watch-->
+        <scene sceneID="SUG-Qw-UlY">
+            <objects>
+                <controller id="Lew-gz-2SM" customClass="MediaBuffet_Watch" customModule="ScreamXO_watch_Extension">
+                    <items>
+                        <table alignment="left" id="Dlw-OO-dgr">
+                            <items>
+                                <tableRow identifier="medialist" id="b59-Df-95t" customClass="mediaBuffetcell" customModule="ScreamXO_watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" contentMode="scaleAspectFit" spacing="5" id="SFx-7n-zW5">
+                                        <items>
+                                            <imageView width="68" height="64" alignment="center" verticalAlignment="center" image="audio_w" contentMode="scaleAspectFit" id="9ac-MP-SR8"/>
+                                        </items>
+                                        <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="imgBuffet" destination="9ac-MP-SR8" id="nvW-sa-ere"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Dlw-OO-dgr" id="lwl-Ww-9B1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="92" y="110"/>
+        </scene>
+        <!--StreamVC watch-->
+        <scene sceneID="1ZT-Xl-XdB">
+            <objects>
+                <controller id="E58-3Z-cVz" customClass="StreamVC_watch" customModule="ScreamXO_watch_Extension">
+                    <items>
+                        <table alignment="left" id="hYx-dP-0U8">
+                            <items>
+                                <tableRow identifier="Stream" id="Icq-4x-A9w" customClass="streamtbl" customModule="ScreamXO_watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="5" id="iCW-tM-Nja">
+                                        <items>
+                                            <label alignment="left" text="Bobby Cargo" textAlignment="justified" id="b1Z-dw-xmN">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                            </label>
+                                            <label alignment="left" text="Awesome Headphones" numberOfLines="0" id="vah-GM-xsV">
+                                                <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="font" type="system" pointSize="11"/>
+                                            </label>
+                                            <group width="1" alignment="left" id="t22-5P-OAU">
+                                                <items>
+                                                    <label width="100" alignment="left" verticalAlignment="center" text="Just" textAlignment="left" minimumScaleFactor="0.59999999999999998" id="2Ik-jO-xn0">
+                                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="font" type="system" weight="light" pointSize="12"/>
+                                                    </label>
+                                                    <imageView alignment="right" verticalAlignment="center" image="like_w" id="8Q1-Iv-Of1"/>
+                                                    <label width="19" alignment="right" verticalAlignment="center" text="22" id="9dm-Ho-nPn">
+                                                        <fontDescription key="font" type="system" pointSize="11"/>
+                                                        <variation key="device=watch42mm" width="16"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
+                                        <connections>
+                                            <segue destination="oez-B0-Isx" kind="push" identifier="commentlistdt" id="ba6-WM-hZl"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="imgLikeicon" destination="8Q1-Iv-Of1" id="wMP-dQ-WUy"/>
+                                        <outlet property="lbldescription" destination="vah-GM-xsV" id="fVY-xl-Lcq"/>
+                                        <outlet property="lbllikecount" destination="9dm-Ho-nPn" id="y6F-Gf-Pty"/>
+                                        <outlet property="lbltime" destination="2Ik-jO-xn0" id="kbs-3G-NMO"/>
+                                        <outlet property="lblusername" destination="b1Z-dw-xmN" id="XGe-mm-mgI"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <imageView width="25" height="25" alignment="center" verticalAlignment="center" hidden="YES" id="zcV-4M-40i"/>
+                    </items>
+                    <connections>
+                        <outlet property="imgLoader" destination="zcV-4M-40i" id="KGJ-2f-1cp"/>
+                        <outlet property="table" destination="hYx-dP-0U8" id="26m-3v-Ol5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-161" y="444"/>
+        </scene>
+        <!--Comment List watch-->
+        <scene sceneID="Qzw-Vj-do1">
+            <objects>
+                <controller id="oez-B0-Isx" customClass="CommentList_watch" customModule="ScreamXO_watch_Extension">
+                    <items>
+                        <table alignment="left" id="hbR-aB-xeU">
+                            <items>
+                                <tableRow identifier="Comment" id="mDM-Le-As6" customClass="commentListtbl" customModule="ScreamXO_watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="5" id="f6T-9e-qp2">
+                                        <items>
+                                            <label alignment="left" text="Bobby Cargo" textAlignment="justified" id="776-Ge-gx3">
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                                            </label>
+                                            <label alignment="left" text="Awesome Headphones" numberOfLines="0" id="e8t-EQ-Qi5">
+                                                <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="font" type="system" pointSize="11"/>
+                                            </label>
+                                            <group width="1" alignment="left" id="fJA-u7-JVv">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="Just" textAlignment="left" minimumScaleFactor="0.59999999999999998" id="Dm1-8p-yUR">
+                                                        <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="font" type="system" weight="light" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lbldescription" destination="e8t-EQ-Qi5" id="UZf-UB-nhK"/>
+                                        <outlet property="lbltime" destination="Dm1-8p-yUR" id="ibG-Vp-kTB"/>
+                                        <outlet property="lblusername" destination="776-Ge-gx3" id="rV4-WJ-Ofb"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <imageView width="25" height="25" alignment="center" verticalAlignment="center" hidden="YES" id="tSs-nJ-HU2"/>
+                    </items>
+                    <connections>
+                        <outlet property="imgLoader" destination="tSs-nJ-HU2" id="zJd-B3-87N"/>
+                        <outlet property="table" destination="hbR-aB-xeU" id="Kd5-0Z-wLd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="68" y="430"/>
+        </scene>
+        <!--Shop Category watch-->
+        <scene sceneID="8jS-Ua-4IT">
+            <objects>
+                <controller id="LML-L8-td1" customClass="ShopCategory_watch" customModule="ScreamXO_watch_Extension">
+                    <items>
+                        <table alignment="left" id="WnT-vn-EZX">
+                            <items>
+                                <tableRow identifier="category" id="MsB-k6-BlU" customClass="shopcatCell" customModule="ScreamXO_watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" radius="5" spacing="5" id="uc6-jV-jjq">
+                                        <items>
+                                            <label width="128" alignment="left" verticalAlignment="center" text="Label" numberOfLines="0" minimumScaleFactor="0.5" id="WKU-VU-Z8L">
+                                                <fontDescription key="font" type="system" pointSize="15"/>
+                                                <variation key="device=watch42mm" minimumScaleFactor="0.5"/>
+                                            </label>
+                                        </items>
+                                        <edgeInsets key="margins" left="5" right="5" top="5" bottom="5"/>
+                                        <connections>
+                                            <segue destination="gkS-Md-PIB" kind="push" identifier="detailItm" id="S5S-I3-6DJ"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblcatname" destination="WKU-VU-Z8L" id="JWC-Vx-3f4"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <imageView width="25" height="25" alignment="center" verticalAlignment="center" hidden="YES" id="ZDp-Wy-hf5"/>
+                    </items>
+                    <connections>
+                        <outlet property="imgLoader" destination="ZDp-Wy-hf5" id="UMM-lm-P6F"/>
+                        <outlet property="table" destination="WnT-vn-EZX" id="tbR-vd-dbf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="92" y="-160"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="Pw3-ba-se4">
+            <objects>
+                <controller identifier="Dashboard" hidesWhenLoading="NO" id="FcW-G2-G5r" customClass="DashboardWatch" customModule="ScreamXO_watch_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="iJz-Eq-hiC">
+                            <items>
+                                <button width="1" alignment="left" backgroundImage="dash_w" id="nab-RA-fwi">
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="btnMiceClicked" destination="FcW-G2-G5r" id="e83-F1-wd9"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="4"/>
+                        </group>
+                        <group width="1" alignment="left" id="ljd-Bp-M9l">
+                            <items>
+                                <imageView alignment="left" image="buff_w" id="clX-Yi-vaj"/>
+                                <button height="26.5" alignment="left" verticalAlignment="center" title="BUFFET" id="7nh-PC-eCR">
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="getmediaPost" destination="FcW-G2-G5r" id="9sF-Ee-pmr"/>
+                                    </connections>
+                                </button>
+                                <imageView width="35" height="1" alignment="left" verticalAlignment="center" contentMode="scaleAspectFit" id="uLU-2h-1ea"/>
+                            </items>
+                            <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="4"/>
+                            <variation key="device=watch42mm" widthAdjustment="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" id="b20-vL-fbk">
+                            <items>
+                                <imageView alignment="left" image="shop_w" id="MdA-Pg-xph"/>
+                                <button height="26.5" alignment="left" verticalAlignment="center" title="SHOP" id="sLh-VC-Pal">
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <segue destination="LML-L8-td1" kind="push" id="3jh-t7-U7n"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="4"/>
+                        </group>
+                        <group width="1" alignment="left" id="aQ3-Jb-22b">
+                            <items>
+                                <imageView alignment="left" image="stream_w" id="R4U-5t-xpU"/>
+                                <button height="26.5" alignment="left" verticalAlignment="center" title="STREAM" id="950-de-dUW">
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <segue destination="E58-3Z-cVz" kind="push" id="3kY-Dc-juU"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="4"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="imgLoader" destination="uLU-2h-1ea" id="Dew-Vg-1u6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-246" y="-14.75"/>
+        </scene>
+        <!--Item Details Watch-->
+        <scene sceneID="2RR-XP-C1V">
+            <objects>
+                <controller id="YoX-GW-iQn" customClass="ItemDetailsWatch" customModule="ScreamXO_watch_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="9Mn-DW-dQE">
+                            <items>
+                                <group width="1" height="60" alignment="left" radius="5" id="MwD-bM-gs6">
+                                    <items>
+                                        <button alignment="center" verticalAlignment="center" id="Cag-j4-cbk">
+                                            <connections>
+                                                <action selector="btnFullimageClicked" destination="YoX-GW-iQn" id="2x6-Rq-Nb7"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="57j-gQ-eOO">
+                                    <items>
+                                        <label width="134.5" alignment="left" text="Centy Scorpio Car" id="bC1-Ld-ZAq">
+                                            <fontDescription key="font" type="system" weight="semibold" pointSize="13"/>
+                                        </label>
+                                        <label alignment="left" text="$120" id="yJ6-9h-dzV">
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                        </label>
+                                        <label width="1" alignment="left" numberOfLines="0" id="wAp-S0-9MM">
+                                            <color key="textColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="5" right="5" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="btnimage" destination="Cag-j4-cbk" id="vT5-AE-mkv"/>
+                        <outlet property="itmDescription" destination="wAp-S0-9MM" id="RXY-5b-kjw"/>
+                        <outlet property="itmPrice" destination="yJ6-9h-dzV" id="6Zw-Vl-NBa"/>
+                        <outlet property="lblitmname" destination="bC1-Ld-ZAq" id="WMv-7A-9ph"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="512" y="-178"/>
+        </scene>
+        <!--Movieplayer_watch-->
+        <scene sceneID="Va2-3c-8tk">
+            <objects>
+                <controller identifier="Movieplayer_watch" id="txD-Dl-et7" customClass="Movieplayer_watch" customModule="ScreamXO_watch_Extension">
+                    <items>
+                        <movie width="1" height="150" alignment="left" id="kpG-tx-bJv"/>
+                    </items>
+                    <connections>
+                        <outlet property="moviePlayer" destination="kpG-tx-bJv" id="R2R-wp-JZl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="292" y="116"/>
+        </scene>
+        <!--ImageVIewer-->
+        <scene sceneID="SQP-hr-fp2">
+            <objects>
+                <controller identifier="ImageVIewer" id="zrq-B9-Cyg" customClass="ImageVIewer" customModule="ScreamXO_watch_Extension">
+                    <items>
+                        <imageView height="154" alignment="left" id="PuA-nh-XAG"/>
+                    </items>
+                    <connections>
+                        <outlet property="imgfullscreen" destination="PuA-nh-XAG" id="BGu-K1-EsC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="822" y="-186.5"/>
+        </scene>
+        <!--BUFFET-->
+        <scene sceneID="fHH-fw-n2K">
+            <objects>
+                <controller identifier="page2" title="BUFFET" hidesWhenLoading="NO" id="iMU-U4-0DN" customClass="page2" customModule="ScreamXO_watch_Extension">
+                    <items>
+                        <group width="1" height="116" alignment="center" verticalAlignment="center" layout="vertical" id="MEg-OQ-if7">
+                            <items>
+                                <button alignment="center" verticalAlignment="center" id="14E-Pe-eb2">
+                                    <group key="contentGroup" width="100" height="100" alignment="left" radius="50" id="beQ-5K-IvE">
+                                        <items>
+                                            <group width="0.95999999999999996" height="0.95999999999999996" alignment="center" verticalAlignment="center" radius="46" spacing="0.0" id="1Yu-Fh-wyx">
+                                                <items>
+                                                    <imageView width="1" height="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFill" id="J8a-RD-Ovt">
+                                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </imageView>
+                                                </items>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="btnMediaClicked:" destination="iMU-U4-0DN" id="O5o-XX-GYT"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="btnImage" destination="14E-Pe-eb2" id="gfK-hm-keB"/>
+                        <outlet property="groupthumb" destination="1Yu-Fh-wyx" id="5aj-E0-wOa"/>
+                        <outlet property="imgView" destination="J8a-RD-Ovt" id="T9B-2N-loB"/>
+                        <outlet property="mainGroup" destination="MEg-OQ-if7" id="Df3-5E-h4T"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="506" y="377"/>
+        </scene>
+    </scenes>
+</document>

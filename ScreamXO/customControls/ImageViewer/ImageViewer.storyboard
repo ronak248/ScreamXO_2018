@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Viewer View Controller-->
+        <scene sceneID="emV-Lj-iXs">
+            <objects>
+                <viewController storyboardIdentifier="ImageViewerViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XPk-sJ-BCU" customClass="ImageViewerViewController" customModule="ScreamXO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QpK-XM-Erf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Th0-O7-ymq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uA0-P4-vsr" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZAl-Oe-O7S">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Xwj-nF-XqY">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="extraLight"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SES-QD-QL0" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVb-Rp-KVY">
+                                <rect key="frame" x="307" y="30" width="45" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="XaR-da-7bV"/>
+                                    <constraint firstAttribute="height" constant="33" id="aYX-xN-CzI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.97647058819999999" green="0.43137254899999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doneBtnClicked" destination="XPk-sJ-BCU" eventType="touchUpInside" id="G1Q-Ff-MRl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SES-QD-QL0" firstAttribute="top" secondItem="QpK-XM-Erf" secondAttribute="bottom" constant="-20" id="3Hs-w1-jZZ"/>
+                            <constraint firstItem="ZAl-Oe-O7S" firstAttribute="centerY" secondItem="uA0-P4-vsr" secondAttribute="centerY" id="I2h-Oc-9Ov"/>
+                            <constraint firstItem="Th0-O7-ymq" firstAttribute="top" secondItem="SES-QD-QL0" secondAttribute="bottom" id="LUQ-1m-apx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WVb-Rp-KVY" secondAttribute="trailing" constant="7" id="Ptp-j7-3Mi"/>
+                            <constraint firstItem="ZAl-Oe-O7S" firstAttribute="width" secondItem="uA0-P4-vsr" secondAttribute="width" id="cO9-cd-Cuq"/>
+                            <constraint firstItem="ZAl-Oe-O7S" firstAttribute="height" secondItem="uA0-P4-vsr" secondAttribute="height" id="i8I-kP-iE5"/>
+                            <constraint firstItem="WVb-Rp-KVY" firstAttribute="top" secondItem="QpK-XM-Erf" secondAttribute="bottom" constant="10" id="jpG-vG-phx"/>
+                            <constraint firstItem="ZAl-Oe-O7S" firstAttribute="centerX" secondItem="uA0-P4-vsr" secondAttribute="centerX" id="lzz-PT-Woh"/>
+                            <constraint firstItem="SES-QD-QL0" firstAttribute="leading" secondItem="uA0-P4-vsr" secondAttribute="leading" id="nD2-F6-iCQ"/>
+                            <constraint firstAttribute="trailing" secondItem="SES-QD-QL0" secondAttribute="trailing" id="vaR-BM-tgE"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="carosel" destination="SES-QD-QL0" id="af0-d0-XbI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ye-83-fFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1006" y="145"/>
+        </scene>
+    </scenes>
+</document>

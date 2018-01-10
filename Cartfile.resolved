@@ -1,0 +1,3 @@
+github "Alamofire/Alamofire" "4.6.0"
+github "AzureAD/microsoft-authentication-library-for-objc" "cd9e3ea353f134ea779dfd5cc2bd778aebdd26f9"
+github "dropbox/SwiftyDropbox" "4.3.0"

@@ -1,0 +1,42 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2++413" : {
+
+    },
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2++413" : 0,
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2" : 0,
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "965F49D6-329C-42E4-9DEF-33374E49465D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2++413" : "ScreamXO_Latest\/",
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2" : "",
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB" : "ScreamXO_25Oct\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ScreamXO",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ScreamXO.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/simformteam\/screamxo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/Ronak.B@pms.simformsolutions.com\/svnroot\/Scream",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7279ee67-ca41-470e-a170-e9f7dbe7c7c2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/Ronak.B@pms.simformsolutions.com\/svnroot\/Scream",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7279ee67-ca41-470e-a170-e9f7dbe7c7c2++413"
+    }
+  ]
+}

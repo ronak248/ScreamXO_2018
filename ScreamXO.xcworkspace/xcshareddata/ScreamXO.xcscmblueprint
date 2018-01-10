@@ -1,0 +1,115 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0F6146E66D8AAF571E2FDC267AE3DDD812EFC960+++FA34004",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2++413+++DADA15E" : {
+
+    },
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2+++08ECFD8" : {
+
+    },
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2++413+++49CECE6" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0F6146E66D8AAF571E2FDC267AE3DDD812EFC960+++FA34004" : 0,
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2++413+++49CECE6" : 0,
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++31FF223" : 0,
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++8FD71BC" : 0,
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++56B97CA" : 0,
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++1B4609D" : 0,
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++38C1425" : 0,
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++FCBB186" : 0,
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2++413+++DADA15E" : 0,
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++395AFAF" : 0,
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2+++08ECFD8" : 0,
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++4A03D3E" : 0,
+    "0F6146E66D8AAF571E2FDC267AE3DDD812EFC960+++1066399" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "45E79EA1-59CE-4253-8E70-B2E4D1393458",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0F6146E66D8AAF571E2FDC267AE3DDD812EFC960+++FA34004" : "SCREAMXO%201\/",
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2++413+++49CECE6" : "ScreamXO_Latest\/",
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++31FF223" : "ScreamXO_24june\/",
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++8FD71BC" : "ScremXO%203\/",
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++56B97CA" : "ScremXO\/",
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++1B4609D" : "ScreamXO_22032017\/",
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++38C1425" : "ScreanXO_APP\/",
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++FCBB186" : "ScreamXO_26may\/",
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2++413+++DADA15E" : "ScreamXO_Latest\/",
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++395AFAF" : "ScreamXO_25Oct\/",
+    "7279ee67-ca41-470e-a170-e9f7dbe7c7c2+++08ECFD8" : "",
+    "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++4A03D3E" : "ScreamXOSwift3%202\/",
+    "0F6146E66D8AAF571E2FDC267AE3DDD812EFC960+++1066399" : "screamxo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ScreamXO",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ScreamXO.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/simformteam\/screamxo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0F6146E66D8AAF571E2FDC267AE3DDD812EFC960+++1066399"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/adminParangat\/iphonescreamxo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0F6146E66D8AAF571E2FDC267AE3DDD812EFC960+++FA34004"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/simformteam\/screamxo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++1B4609D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/simformteam\/screamxo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++31FF223"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/simformteam\/screamxo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++38C1425"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/simformteam\/screamxo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++395AFAF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/simformteam\/screamxo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++4A03D3E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/simformteam\/screamxo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++56B97CA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/simformteam\/screamxo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++8FD71BC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/simformteam\/screamxo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "324F1E6C0BCCC98AEBA0A50AD208C3A3D34663AB+++FCBB186"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/Ronak.B@pms.simformsolutions.com\/svnroot\/Scream",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7279ee67-ca41-470e-a170-e9f7dbe7c7c2+++08ECFD8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/Ronak.B@pms.simformsolutions.com\/svnroot\/Scream",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7279ee67-ca41-470e-a170-e9f7dbe7c7c2++413+++49CECE6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/Ronak.B@pms.simformsolutions.com\/svnroot\/Scream",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7279ee67-ca41-470e-a170-e9f7dbe7c7c2++413+++DADA15E"
+    }
+  ]
+}

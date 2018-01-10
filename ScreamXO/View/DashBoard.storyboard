@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ProximaNova-Reg.otf">
+            <string>ProximaNova-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Home Screen-->
+        <scene sceneID="fGl-DI-NQf">
+            <objects>
+                <viewController storyboardIdentifier="HomeScreen" id="Ry2-wn-0Xt" customClass="HomeScreen" customModule="ScreamXO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uzs-Lf-9TF"/>
+                        <viewControllerLayoutGuide type="bottom" id="qVS-T9-DP6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ldm-3C-9rt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQU-9M-e0i">
+                                <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1vf-ws-vTO"/>
+                                    <constraint firstAttribute="width" constant="44" id="p0W-cr-OiL"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Button" image="Menuic"/>
+                                <connections>
+                                    <action selector="btnMenucClicked:" destination="Ry2-wn-0Xt" eventType="touchUpInside" id="fcB-Ph-x7C"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="DASHBOARD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9g-tM-HOj">
+                                <rect key="frame" x="44" y="20" width="232" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="dnE-R4-rui"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="jSO-fc-cFa"/>
+                                    <constraint firstAttribute="height" constant="44" id="okb-3p-ZLA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="16"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="okb-3p-ZLA"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k9g-tM-HOj" firstAttribute="leading" secondItem="BQU-9M-e0i" secondAttribute="trailing" id="0CD-bx-Uwm"/>
+                            <constraint firstItem="k9g-tM-HOj" firstAttribute="leading" secondItem="BQU-9M-e0i" secondAttribute="trailing" id="1rx-SO-jmq"/>
+                            <constraint firstItem="qVS-T9-DP6" firstAttribute="top" secondItem="k9g-tM-HOj" secondAttribute="bottom" priority="250" constant="504" id="CG8-yD-bej"/>
+                            <constraint firstItem="k9g-tM-HOj" firstAttribute="top" secondItem="Uzs-Lf-9TF" secondAttribute="bottom" id="Dat-Qd-VN8"/>
+                            <constraint firstItem="BQU-9M-e0i" firstAttribute="leading" secondItem="Ldm-3C-9rt" secondAttribute="leading" id="kfM-1i-M2g"/>
+                            <constraint firstAttribute="trailing" secondItem="k9g-tM-HOj" secondAttribute="trailing" constant="44" id="rqb-SJ-1Wc"/>
+                            <constraint firstItem="BQU-9M-e0i" firstAttribute="top" secondItem="Uzs-Lf-9TF" secondAttribute="bottom" id="x3R-UR-ILg"/>
+                            <constraint firstItem="qVS-T9-DP6" firstAttribute="top" secondItem="BQU-9M-e0i" secondAttribute="bottom" priority="250" constant="504" id="xW5-cn-nyL"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1rx-SO-jmq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="79H-bN-fR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Menuic" width="13" height="12"/>
+    </resources>
+</document>
